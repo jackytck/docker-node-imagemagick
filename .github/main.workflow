@@ -17,11 +17,11 @@ action "login" {
 action "tag" {
   uses = "actions/docker/cli@master"
   needs = ["login"]
-  args = "tag docker-node-imagemagick jackytck/docker-node-imagemagick:$(git describe --abbrev=0)"
+  args = "tag docker-node-imagemagick jackytck/docker-node-imagemagick:v0.0.2"
 }
 
 action "push" {
   uses = "actions/docker/cli@master"
   needs = ["tag"]
-  args = "push jackytck/docker-node-imagemagick:$(git describe --abbrev=0)"
+  args = "push jackytck/docker-node-imagemagick:v0.0.2"
 }
