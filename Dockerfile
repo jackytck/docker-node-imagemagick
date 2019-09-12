@@ -3,7 +3,7 @@ FROM node:11-slim
 ENV MAGICK_URL "http://imagemagick.org/download/releases"
 ENV MAGICK_VERSION 7.0.7-22
 
-RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 8277377A \
+RUN gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys 8277377A \
   && apt-get update -y \
   && apt-get install -y --no-install-recommends \
     libpng-dev libjpeg-dev libtiff-dev libopenjpeg-dev xz-utils build-essential \
