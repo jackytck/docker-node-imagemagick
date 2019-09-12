@@ -1,7 +1,7 @@
-FROM node:11-slim
+FROM node:10.13-jessie
 
 ENV MAGICK_URL "http://imagemagick.org/download/releases"
-ENV MAGICK_VERSION 7.0.7-22
+ENV MAGICK_VERSION 7.0.8-64
 
 RUN gpg --keyserver ipv4.pool.sks-keyservers.net --recv-keys 8277377A \
   && apt-get update -y \
