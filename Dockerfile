@@ -1,4 +1,4 @@
-FROM node:9-slim
+FROM node:11-slim
 
 ENV MAGICK_URL "http://imagemagick.org/download/releases"
 ENV MAGICK_VERSION 7.0.7-22
